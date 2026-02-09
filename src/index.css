@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  /* 1. Cambiamos 'center' por 'flex-start' para que empiece arriba */
+  align-items: flex-start; 
+  
+  /* 2. 'min-height' asegura que el fondo cubra todo, pero permite crecer */
+  min-height: 100vh; 
+  
+  /* 3. Añadimos un padding (aire) arriba y abajo */
+  padding-top: 50px;
+  padding-bottom: 50px; 
+  
+  /* 4. Importante para que el padding no sume tamaño extra */
+  box-sizing: border-box; 
+  
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: sans-serif;
+}
+
+/* Color granate para cuando el botón está activo */
+.btn-granate {
+    background-color: #860000 !important;
+    border-color: #860000 !important;
+    color: white !important;
+}
+
+.btn-outline-granate {
+    background-color: transparent !important;
+    border-color: #860000 !important;
+    color: #860000 !important;
+}
+
+.btn-outline-granate:hover {
+    background-color: #860000 !important;
+    color: white !important;
+}
